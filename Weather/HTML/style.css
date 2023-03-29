@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  height: 100%;
+}
+
+.bodyNow {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  background: linear-gradient(100deg, #a8c0ff, #3f2b96);
+  overflow: auto;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 70px auto;
+  border: 3px solid black;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.input-1 {
+  width: 99%;
+  outline: none;
+  height: 70px;
+  border: none;
+  font-size: 20px;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.blockWeather {
+  width: 50%;
+  height: 600px;
+  border-top: 3px solid black;
+  border-bottom-left-radius: 15px;
+  background: #ffff;
+}
+
+.blockTown {
+  width: 50%;
+  height: 600px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom-right-radius: 15px;
+}
+
+.two-blocks {
+  display: flex;
+}
+
+.location {
+  height: 90px;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text-name {
+  font-size: 40px;
+  font-weight: 100;
+  margin: 10px 0px 10px 20px;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.texts {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 5px 5px 5px 10px;
+  padding: 0px;
+}
+
+.texts-2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 5px 5px 5px 10px;
+  padding: 0px;
+}
+
+.imgTo {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.locations {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(100deg, #6dd4fa9f, #ffffffbd);
+}
+
+.locations-2 {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(100deg, #77e487c0, #ffffff);
+  margin-bottom: 20px;
+}
+
+.img_town {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.texts-3 {
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 40px;
+  margin: 0px 0px 0px 20px;
+}
+
+.buttonAll {
+  width: 100%;
+  height: 92px;
+  border-top: 3px solid black;
+  display: flex;
+  justify-content: flex-start;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.7s;
+  padding: 0px;
+}
+
+.one {
+  border-bottom-left-radius: 11px;
+}
+
+.two {
+  border-left: 3px solid black;
+}
+
+.three {
+  border-left: 3px solid black;
+}
+
+.active-button {
+  background-color: black;
+  color: white;
+}
+
+.not-active-button {
+  background-color: white;
+  color: black;
+}
+
+.not-active-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+}
+
+.search {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonTwoForecast {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.7s;
+  border-left: 3px solid black;
+}
+
+.buttonTwoForecast:hover {
+  background-color: black;
+  color: white;
+}
+
+.weatherBlock {
+  height: 506px;
+  width: 100%;
+}
+
+.weatherBlock_3 {
+  overflow: auto;
+  height: 506px;
+  width: 100%;
+}
+
+.weatherBlock_3::-webkit-scrollbar {
+  width: 0.001px;
+}
+
+.degrees {
+  font-weight: 100;
+  font-size: 150px;
+  margin: 0px 0px 0px 20px;
+}
+
+.weatherImg {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cloud {
+  width: 230px;
+  height: 100%;
+}
+
+.imges {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.blockes {
+  width: 560px;
+  height: 230px;
+  border: 2px solid black;
+  margin: 20px auto;
+  box-shadow: 4px 4px 10px rgb(111, 163, 163);
+  border-radius: 15px;
+  background: linear-gradient(100deg, #c6ffdd, #fbd786, #f7797d);
+  /* background: linear-gradient(100deg, #c9ffbf, #ffafbd); */
+}
+
+.underDay {
+  font-weight: 100;
+  margin: 10px;
+}
+
+.underFirstBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.underSecondBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.underThirdBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgWeather {
+  width: 55px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.undertext {
+  font-weight: 100;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.doubleArray {
+  display: flex;
+  align-items: center;
+}
+
+.buttonSave {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.saveTownes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.buttonSave-2 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.locationTemperature {
+  margin: 10px;
+  font-size: 40px;
+  font-weight: 100;
+  margin-left: 20px;
+  cursor: default;
+  transition: 0.4s;
+}
+
+.locationTown {
+  margin: 10px;
+  font-size: 40px;
+  font-weight: 100;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.activeTown {
+  margin: 10px 10px 10px 11px;
+  font-size: 40px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.locationTown:hover {
+  transform: scale(1.07);
+}
+
+.locationTown-active:hover {
+  transform: scale(1.07);
+}
+
+.locationTemperature:hover {
+  transform: scale(1.01);
+}
+
+.weather-block {
+  display: flex;
+}
+
+.weather-block-temp {
+  display: flex;
+}
+
+.imgSunrise_sunset {
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px 5px 15px;
+}
+
+.imgSunrise_sunset-temp {
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px 5px 5px;
+}
+
+.saveTown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actives-block-town {
+  background: #ffffff9f;
+  box-shadow: 1px 1px 7px #ffffff;
+}
+
+.delete {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 30px;
+}
+
+.deleteBlock {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: transparent;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.deleteBlock:hover {
+  background-color: rgba(255, 0, 0, 0.632);
+}
+
+.twoBlockTown {
+  width: 100%;
+  height: 508px;
+  overflow: auto;
+  background: linear-gradient(88deg, #6dd4fa9f, #ffffff);
+  border-bottom-right-radius: 15px;
+}
+
+.twoBlockTown::-webkit-scrollbar {
+  width: 0.1px;
+}
+
+.active-block {
+  display: block;
+}
+
+.not-active-block {
+  display: none;
+}
+
+.imgTown {
+  width: 20px;
+  height: 20px;
+}
+
+.twoBlock {
+  display: flex;
+  align-items: center;
+}
+
+.errorBlok {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.error {
+  width: 300px;
+  height: 50px;
+  background-color: #ffc6c6;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+.textDelete {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3f2b96;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(177, 176, 176);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144, 140, 140, 0.616);
+}

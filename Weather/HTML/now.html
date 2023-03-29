@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="/HTML/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body class="bodyNow">
+    <div class="container">
+      <form class="firstDiv">
+        <input type="text" class="input-1" value="" placeholder=" Aktobe" />
+        <button type="submit" class="search">
+          <img src="/images/search.png" alt="search" class="img" />
+        </button>
+      </form>
+      <div class="two-blocks">
+        <div class="blockWeather">
+          <div class="block active-block" id="tab-1">
+            <div class="weatherBlock">
+              <h1 class="degrees">0°</h1>
+              <div class="weatherImg">
+                <img src="/images/01d.png" alt="cloud" class="cloud" />
+              </div>
+              <div class="saveTownes">
+                <h1 class="text-name">Town</h1>
+                <button class="buttonSave">
+                  <img src="/images/heart.png" alt="heart" class="imges" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="block not-active-block" id="tab-2">
+            <div class="weatherBlock">
+              <div class="locations">
+                <div class="doubleArray">
+                  <img src="/images/next.png" class="imgTo" />
+                  <h1 class="texts">Town</h1>
+                </div>
+                <button class="buttonSave">
+                  <img src="/images/heart.png" alt="heart" class="imges" />
+                </button>
+              </div>
+              <div class="weather-block-temp">
+                <img
+                  src="/images/hot.png"
+                  alt="hot"
+                  class="imgSunrise_sunset-temp"
+                />
+                <h1 class="locationTemperature temp">Temperature: 14°</h1>
+              </div>
+              <div class="weather-block">
+                <img
+                  src="/images/thermometer.png"
+                  alt="sunset"
+                  class="imgSunrise_sunset"
+                />
+                <h1 class="locationTemperature feelsTemp">Feels like: 10°</h1>
+              </div>
+              <div class="weather-block">
+                <div class="weatherImges">
+                  <img
+                    src="/images/sun.png"
+                    alt="sunset"
+                    class="imgSunrise_sunset"
+                  />
+                </div>
+                <h1 class="locationTemperature weather">Weather: Coulds</h1>
+              </div>
+              <div class="weather-block">
+                <img
+                  src="/images/sunrise.png"
+                  alt="sunrise"
+                  class="imgSunrise_sunset"
+                />
+                <h1 class="locationTemperature sunrise">Sunrise: 03:21</h1>
+              </div>
+              <div class="weather-block">
+                <img
+                  src="/images/sunset.png"
+                  alt="sunset"
+                  class="imgSunrise_sunset"
+                />
+                <h1 class="locationTemperature sunset">Sunset: 18:54</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="block not-active-block" id="tab-3">
+            <div class="weatherBlock_3">
+              <div class="locations-2">
+                <div class="twoBlock">
+                  <div class="doubleArray">
+                    <img src="/images/next.png" class="imgTo" />
+                    <h1 class="texts-2">Town</h1>
+                  </div>
+                </div>
+                <button class="buttonSave">
+                  <img src="/images/heart.png" alt="heart" class="imges" />
+                </button>
+              </div>
+
+              <div class="all_Block_Weather"></div>
+            </div>
+          </div>
+
+          <div class="buttonAll">
+            <button class="button active-button one" data-tab="#tab-1">
+              Now
+            </button>
+            <button class="button not-active-button two" data-tab="#tab-2">
+              Detalis
+            </button>
+            <button class="button not-active-button three" data-tab="#tab-3">
+              Forecast
+            </button>
+          </div>
+        </div>
+        <div class="blockTown">
+          <div class="location">
+            <h1 class="text">Aded Location:</h1>
+          </div>
+          <div class="twoBlockTown">
+            <div class="saveTown">
+              <h1 class="locationTown">Moscow</h1>
+              <div class="deleteBlock">
+                <button type="submit" class="delete">×</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/JS/main.js"></script>
+</html>
